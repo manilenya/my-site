@@ -16,26 +16,32 @@
 @import 'bootstrap';
 
 body {
-	background:url(/images/bg.png) #52DBEB;
 
-	.navbar-default {
-		height: 70px;
-
-		.navbar-brand{
-			padding: 25px 50px;
-		}
+	.navbar {
+		margin-bottom: 0;
 	}
 
-	.navbar-nav > li {
-		padding: 10px 0;
+	.intro {
+		background: url(http://25.media.tumblr.com/d4955c5fb31743bd0740f5001adafb79/tumblr_n10n3wfcrl1st5lhmo1_1280.jpg) no-repeat 50%;
+		background-size: cover;
 
-		&:last-child {
-		margin-right: 50px;
-		}
-	}
-
-	.jumbotron {
+		
+		.jumbotron {
 		background: none;
 		text-align: center;
+		color: #fff;
+		}
+	}
+
+	.emailMe {
+		text-align: center;
+
+		.btn-success a {
+			color: #fff;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }

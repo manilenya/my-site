@@ -10,7 +10,6 @@ group :development, :test do
 	gem 'sqlite3', '1.3.8'
 end
 
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '3.1.1'
 gem 'uglifier', '>= 1.3.0'
@@ -18,6 +17,16 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+
+# Forms, mail
+gem 'mail_form'
+gem 'simple_form'
+
+#Development Guard
+gem 'guard-rails', group: :development
+gem 'guard-livereload', group: :development
+gem 'rack-livereload', group: :development
+gem 'guard-bundler', group: :development
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
