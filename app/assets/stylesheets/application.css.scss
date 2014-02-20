@@ -15,33 +15,158 @@
 
 @import 'bootstrap';
 
+/* variables */
+
+$primary-color: #5BD5A0;
+
+img {
+		max-width: 100%;
+	}
+
+
 body {
+
+	font-family: 'Montserrat', sans-serif;
+
+	.center {
+		text-align: center;
+	}
 
 	.navbar {
 		margin-bottom: 0;
+
+		.navbar-brand {
+			font-weight: 700;
+		}
 	}
 
 	.intro {
-		background: url(http://25.media.tumblr.com/d4955c5fb31743bd0740f5001adafb79/tumblr_n10n3wfcrl1st5lhmo1_1280.jpg) no-repeat 50%;
-		background-size: cover;
-
-		
+		background: $primary-color;
+		color: #515151;
+	
 		.jumbotron {
-		background: none;
 		text-align: center;
 		color: #fff;
-		}
-	}
+		background-color: transparent;
 
-	.emailMe {
-		text-align: center;
+			.btn-success{
+				background: $primary-color;
 
-		.btn-success a {
-			color: #fff;
+				a {
+					color: #fff;
 
-			&:hover {
-				text-decoration: none;
+					&:hover {
+					text-transform: none;
+					}
+				}
 			}
 		}
 	}
+
+	.aboutMe {
+		text-align: center;
+	}
+
+	.recentP {
+		text-align: center;
+
+		.col-xs-4 {
+			width: 100%;
+			padding: 10px 20px;
+
+			.btn-primary {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 5%;
+				width: 90%;
+				border-radius: 0;
+				border: none;
+				color: #000;
+				background: transparent;
+				height: 100%;
+				-webkit-transition: opacity 1s ease-in-out;
+				  -moz-transition: opacity 1s ease-in-out;
+				  -ms-transition: opacity 1s ease-in-out;
+				  -o-transition: opacity 1s ease-in-out;
+				  transition: opacity 1s ease-in-out;
+
+				&:hover {
+					background: #eee;
+					zoom: 1;
+					filter: alpha(opacity=50);
+					opacity: 0.5;
+				}
+			}
+
+			.modal-body p {
+				text-align: left;
+				padding: 20px 0 0;
+			}
+
+			.modal-footer {
+				.btn-primary{
+					position: relative;
+					left: 0;
+					width: auto;
+					border: 1px solid $primary-color;
+					border-radius: 4px;
+
+					&:hover {
+						background: none;
+						filter:alpha(opacity=1);
+						opacity: 1
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width:40em) {
+
+	body {
+
+		.navbar {
+			height: 100px;
+			width: 80%;
+			margin: 0 auto;
+			border: none;
+			background: transparent;
+
+			.navbar-brand {
+				font-size: 24px;
+			}
+
+			.navbar-brand, .nav, .navbar-toggle {
+				margin-top: 25px;
+			}
+		}
+		.navbar-default {
+			background-color: none;
+			border-color: none;		
+		}
+
+		.intro {
+
+			background: url(/images/intro-bg.png) no-repeat 100%;
+			background-size: cover;
+		}
+
+		.aboutMe {
+			width: 70%;
+			margin: 0 auto;
+			padding: 70px 0;
+		}
+
+		.recentP {
+
+			padding: 70px 0;
+
+			.col-xs-4 {
+				width: 33.3%;
+			}
+		}
+	}	
 }
