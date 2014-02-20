@@ -41,7 +41,8 @@ body {
 	}
 
 	.intro {
-		background: $primary-color;
+		background: url(/images/intro-bg.png) no-repeat 100%;
+		background-size: cover;
 		color: #515151;
 	
 		.jumbotron {
@@ -150,8 +151,6 @@ body {
 
 		.intro {
 
-			background: url(/images/intro-bg.png) no-repeat 100%;
-			background-size: cover;
 		}
 
 		.aboutMe {
