@@ -18,3 +18,8 @@
 //= require turbolinks
 //= require_tree .
 
+//The wow effect
+	 new WOW().init();
+
+
+
