@@ -42,15 +42,14 @@ body {
 	}
 
 	.intro {
-		background: url(/images/intro-bg.png) no-repeat 100%;
+		background: url(/images/elmvale.jpg) no-repeat 100%;
 		background-size: cover;
-		color: #515151;
 	
 		.jumbotron {
 		text-align: center;
 		color: #fff;
-		background: #95DDD5;
-		/*background: url(https://raw.github.com/subtlepatterns/SubtlePatterns/master/bedge_grunge.png);*/
+		background: transparent;
+		text-shadow: 0 0 1px #000;
 
 			.btn-success{
 				background: transparent;
@@ -201,11 +200,8 @@ body {
 			border-color: none;		
 		}
 
-		.jumbotron {
-			h1 {
-				text-shadow: 5px 2px 1px darkgray, 7px 4px 1px gray;
-				letter-spacing: .05em;
-			}
+		.intro {
+			height: 600px;
 		}
 
 		.social {
