@@ -1,20 +1,22 @@
-<nav class="navbar navbar-default wow fadeInDown" role="navigation" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <%= link_to "Annalyn build things", root_path, id: "logo", class: "navbar-brand" %>
-  </div>
+<header>
+    <nav class="navbar navbar-default wow fadeInDown" role="navigation" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Annalyn build things", root_path, id: "logo", class: "navbar-brand" %>
+    </div>
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://annalyn.roon.io">Blog</a></li>
-      <li><a href="https:/twitter.com/manilenya">@manilenya</a></li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Contact", new_inquiry_path %></li>
+        <li><a href="http://annalyn.roon.io">Blog</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+</header>

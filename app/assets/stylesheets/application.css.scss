@@ -11,13 +11,14 @@
  *= require_self
  *= require_tree .
  *= require animate
+ *= require font-awesome
  */
 
 @import 'bootstrap';
 
 /* variables */
 
-$primary-color: #5BD5A0;
+$primary-color: #5AA9A4;
 
 img {
 		max-width: 100%;
@@ -48,28 +49,48 @@ body {
 		.jumbotron {
 		text-align: center;
 		color: #fff;
-		background-color: #F2D03B;
+		background: #95DDD5;
+		/*background: url(https://raw.github.com/subtlepatterns/SubtlePatterns/master/bedge_grunge.png);*/
 
 			.btn-success{
-				background: $primary-color;
+				background: transparent;
+				border-width: 4px;
+				border-radius: 0;
+
+				&:focus {
+						outline: none;
+					}
 
 				a {
 					color: #fff;
 
 					&:hover {
-					text-transform: none;
+					text-decoration: none;
 					}
 				}
 			}
 		}
 	}
 
-	.aboutMe {
+	.social, .aboutMe {
 		text-align: center;
+	}
+
+	.social {
+		padding: 45px 20px;
+		.fa{
+		font-size: 3em;
+		padding: 10px;
+		color: #515151;
+			&:hover {
+				color: #aeaeae;
+			}
+		}
 	}
 
 	.recentP {
 		text-align: center;
+		background: #EEE;
 
 		.col-xs-4 {
 			width: 100%;
@@ -122,6 +143,18 @@ body {
 			}
 		}
 	}
+
+	footer {
+		padding: 40px 20px;
+		border-bottom:5px solid #515151;
+
+	}
+
+	/* Inquiry */
+
+	.col-xs-5 {
+		width: 100%;
+	}
 }
 
 
@@ -130,18 +163,37 @@ body {
 	body {
 
 		.navbar {
-			height: 100px;
-			width: 80%;
 			margin: 0 auto;
 			border: none;
-			background: transparent;
+			border-radius: 0;
+			background: #333333;
 
 			.navbar-brand {
 				font-size: 24px;
+				color: #ddd;
+				margin-left: 100px;
+
+				&:hover {
+					color: #ccc;
+				}
 			}
 
 			.navbar-brand, .nav, .navbar-toggle {
 				margin-top: 25px;
+			}
+
+			.nav {
+				margin-right: 100px;
+
+				li {
+					a:hover {
+						color: #ddd;
+					}
+				}
+			}
+
+			.navbar-right:last-child {
+				margin-right: 100px;
 			}
 		}
 		.navbar-default {
@@ -149,10 +201,24 @@ body {
 			border-color: none;		
 		}
 
+		.jumbotron {
+			h1 {
+				text-shadow: 5px 2px 1px darkgray, 7px 4px 1px gray;
+				letter-spacing: .05em;
+			}
+		}
+
+		.social {
+			padding: 0;
+
+			.fa {
+				font-size: 4em;
+			}
+		}
+
 		.aboutMe {
-			width: 70%;
-			margin: 0 auto;
-			padding: 70px 0;
+			margin: 50px auto 0;
+			padding: 100px 0;
 		}
 
 		.recentP {
@@ -161,6 +227,14 @@ body {
 
 			.col-xs-4 {
 				width: 33.3%;
+			}
+		}
+
+		.newInquiry, .tyInquiry {
+			margin-left: 100px;
+
+			.col-xs-5 {
+				width: 60%;
 			}
 		}
 	}	

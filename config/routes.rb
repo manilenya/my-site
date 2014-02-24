@@ -2,6 +2,13 @@ MySite::Application.routes.draw do
 
   root "pages#home"
 
+
+
+  resources :inquiries, :only => [:new, :create] do
+    get 'thank_you', :on => :collection
+  end
+
+  match '/inquiries', to: 'inquiries#new',  via: 'get'
   match ':controller(/:action(/:id))', :via => :get
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

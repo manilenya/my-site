@@ -12,15 +12,15 @@ end
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '3.1.1'
+gem 'font-awesome-sass'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
-# Forms, mail
-gem 'mail_form'
-gem 'simple_form'
+# mail
+gem 'pony'
 
 #Development Guard
 gem 'guard-rails', group: :development
