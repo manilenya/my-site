@@ -1,7 +1,17 @@
 
 <div class="container newInquiry">
-	<h1>Want to get in touch?</h1>
-	<p>Please fill out the form below and we'll get back to you as soon as possible.</p>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<h1>Hire me or just want to get in touch?</h1>
+			<p>Please fill out the form below and I'll get back to you as soon as possible.</p>
 
-	<%= render 'form', :inquiry => @inquiry %>
+			<%= render 'form', :inquiry => @inquiry %>
+		</div>
+
+		<div class="col-xs-6 col-md-4 visible-lg">
+			<p class="left"><img src="http://farm4.staticflickr.com/3397/4553640486_9872706745_o.jpg" alt="" /></p>
+			<p class="left"><img src="http://farm5.staticflickr.com/4032/4544746040_975daa41c9_o.jpg" alt="me" /></p>
+		</div>
+	</div>
+
 </div>

@@ -19,6 +19,7 @@
 /* variables */
 
 $primary-color: #5AA9A4;
+$secondary-color: #D36A6A;
 
 img {
 		max-width: 100%;
@@ -42,13 +43,14 @@ body {
 	}
 
 	.intro {
-		background: url(/images/elmvale.jpg) no-repeat 100%;
+		background: $secondary-color;
 		background-size: cover;
 	
 		.jumbotron {
 		text-align: center;
 		color: #fff;
 		background: transparent;
+		padding-top: 120px;
 		text-shadow: 0 0 1px #000;
 
 			.btn-success{
@@ -161,76 +163,69 @@ body {
 
 	body {
 
-		.navbar {
-			margin: 0 auto;
-			border: none;
-			border-radius: 0;
-			background: #333333;
+		header {
+			background: $secondary-color;
 
-			.navbar-brand {
-				font-size: 24px;
-				color: #ddd;
-				margin-left: 100px;
+			.navbar {
+				margin: 0 auto;
+				border: none;
+				border-radius: 0;
+				background: transparent;
 
-				&:hover {
-					color: #ccc;
+				.navbar-brand {
+					font-size: 24px;
+					color: #ddd;
+
+					&:hover {
+						color: #ccc;
+					}
 				}
-			}
 
-			.navbar-brand, .nav, .navbar-toggle {
-				margin-top: 25px;
-			}
+				.navbar-brand, .nav, .navbar-toggle {
+					margin-top: 25px;
+				}
 
-			.nav {
-				margin-right: 100px;
+				.nav {
 
-				li {
-					a:hover {
-						color: #ddd;
+					li {
+						a {
+							color: #fff;
+							&:hover {
+								color: #ddd;
+							}
+						}
 					}
 				}
 			}
-
-			.navbar-right:last-child {
-				margin-right: 100px;
+			.navbar-default {
+				background-color: none;
+				border-color: none;		
 			}
-		}
-		.navbar-default {
-			background-color: none;
-			border-color: none;		
 		}
 
 		.intro {
 			height: 600px;
 		}
 
-		.social {
-			padding: 0;
-
-			.fa {
-				font-size: 4em;
-			}
-		}
-
 		.aboutMe {
 			margin: 50px auto 0;
 			padding: 100px 0;
+
+			.container {
+				width: 70%;
+			}
 		}
 
 		.recentP {
 
 			padding: 70px 0;
 
+			.container {
+				width: 70%;
+			}
+
 			.col-xs-4 {
 				width: 33.3%;
-			}
-		}
-
-		.newInquiry, .tyInquiry {
-			margin-left: 100px;
-
-			.col-xs-5 {
-				width: 60%;
 			}
 		}
 	}	
