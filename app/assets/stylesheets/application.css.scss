@@ -36,10 +36,15 @@ body {
 
 	.navbar {
 		margin-bottom: 0;
+		border: none;
 
 		.navbar-brand {
 			font-weight: 700;
 		}
+	}
+
+	.navbar-default {
+		background: transparent;
 	}
 
 	.intro {
